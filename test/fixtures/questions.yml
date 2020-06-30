@@ -1,0 +1,39 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  level: MyString
+  year: 1
+  section: MyString
+  questionnumber: 1
+  part: MyString
+  subpart: MyString
+  instructions: MyText
+  preamble: MyText
+  questiontext: MyText
+  answertext: MyText
+  teachingpoint: MyText
+  comment: MyText
+  questiontype: MyString
+  topic: MyString
+  subtopic: MyString
+  marks: 1
+  curriculumref: MyString
+
+two:
+  level: MyString
+  year: 1
+  section: MyString
+  questionnumber: 1
+  part: MyString
+  subpart: MyString
+  instructions: MyText
+  preamble: MyText
+  questiontext: MyText
+  answertext: MyText
+  teachingpoint: MyText
+  comment: MyText
+  questiontype: MyString
+  topic: MyString
+  subtopic: MyString
+  marks: 1
+  curriculumref: MyString

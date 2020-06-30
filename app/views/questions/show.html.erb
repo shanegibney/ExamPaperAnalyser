@@ -1,0 +1,89 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @question.level %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @question.year %>
+</p>
+
+<p>
+  <strong>Section:</strong>
+  <%= @question.section %>
+</p>
+
+<p>
+  <strong>Questionnumber:</strong>
+  <%= @question.questionnumber %>
+</p>
+
+<p>
+  <strong>Part:</strong>
+  <%= @question.part %>
+</p>
+
+<p>
+  <strong>Subpart:</strong>
+  <%= @question.subpart %>
+</p>
+
+<p>
+  <strong>Instructions:</strong>
+  <%= @question.instructions %>
+</p>
+
+<p>
+  <strong>Preamble:</strong>
+  <%= @question.preamble %>
+</p>
+
+<p>
+  <strong>Questiontext:</strong>
+  <%= @question.questiontext %>
+</p>
+
+<p>
+  <strong>Answertext:</strong>
+  <%= @question.answertext %>
+</p>
+
+<p>
+  <strong>Teachingpoint:</strong>
+  <%= @question.teachingpoint %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @question.comment %>
+</p>
+
+<p>
+  <strong>Questiontype:</strong>
+  <%= @question.questiontype %>
+</p>
+
+<p>
+  <strong>Topic:</strong>
+  <%= @question.topic %>
+</p>
+
+<p>
+  <strong>Subtopic:</strong>
+  <%= @question.subtopic %>
+</p>
+
+<p>
+  <strong>Marks:</strong>
+  <%= @question.marks %>
+</p>
+
+<p>
+  <strong>Curriculumref:</strong>
+  <%= @question.curriculumref %>
+</p>
+
+<%= link_to 'Edit', edit_question_path(@question) %> |
+<%= link_to 'Back', questions_path %>

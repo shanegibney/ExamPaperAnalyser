@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Questions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th>Year</th>
+      <th>Section</th>
+      <th>Questionnumber</th>
+      <th>Part</th>
+      <th>Subpart</th>
+      <th>Instructions</th>
+      <th>Preamble</th>
+      <th>Questiontext</th>
+      <th>Answertext</th>
+      <th>Teachingpoint</th>
+      <th>Comment</th>
+      <th>Questiontype</th>
+      <th>Topic</th>
+      <th>Subtopic</th>
+      <th>Marks</th>
+      <th>Curriculumref</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @questions.each do |question| %>
+      <tr>
+        <td><%= question.level %></td>
+        <td><%= question.year %></td>
+        <td><%= question.section %></td>
+        <td><%= question.questionnumber %></td>
+        <td><%= question.part %></td>
+        <td><%= question.subpart %></td>
+        <td><%= question.instructions %></td>
+        <td><%= question.preamble %></td>
+        <td><%= question.questiontext %></td>
+        <td><%= question.answertext %></td>
+        <td><%= question.teachingpoint %></td>
+        <td><%= question.comment %></td>
+        <td><%= question.questiontype %></td>
+        <td><%= question.topic %></td>
+        <td><%= question.subtopic %></td>
+        <td><%= question.marks %></td>
+        <td><%= question.curriculumref %></td>
+        <td><%= link_to 'Show', question %></td>
+        <td><%= link_to 'Edit', edit_question_path(question) %></td>
+        <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Question', new_question_path %>
